@@ -297,17 +297,17 @@ class BubbleChart extends Backbone.View
 
                 that = this
 
-               console.log('how many likes', $(document.getElementsByTagName('fb:like')).size());
-               likeref = $(document.getElementsByTagName('fb:like')).attr('href');
-               likeurlparts = likeref.split('/');
-               likeurlparts.splice(-1);
-               lasturlpart = location.href.split('/').splice(-1)[0];
+                console.log('how many likes', $(document.getElementsByTagName('fb:like')).size())
+                likeref = $(document.getElementsByTagName('fb:like')).attr('href')
+                likeurlparts = likeref.split('/')
+                likeurlparts.splice(-1)
+                lasturlpart = location.href.split('/').splice(-1)[0]
               # likeurlparts.push(lasturlpart + '.html');
-               likeurlparts.push('abcdef.html'); #REPLACE THIS WITH THE PREVIOUS LINE WHEN HTMLZ AND IMAGES
-               newlikeref = likeurlparts.join('/');
-               console.log('new like url', newlikeref);
-               $(document.getElementsByTagName('fb:like')).attr('href', newlikeref);
-               FB.XFBML.parse();
+                likeurlparts.push('abcdef.html') #REPLACE THIS WITH THE PREVIOUS LINE WHEN HTMLZ AND IMAGES
+                newlikeref = likeurlparts.join('/')
+                console.log('new like url', newlikeref)
+                $(document.getElementsByTagName('fb:like')).attr('href', newlikeref)
+                FB.XFBML.parse()
 
                 $("div[data-id='#{@id}'] .btnDownload").attr("href","/images/large/#{@model.get 'field'}.jpg")
 
@@ -501,7 +501,7 @@ class BubbleChart extends Backbone.View
 
                 if @force != null
                         @force.stop()
-                fb_iframe = '<fb:like href="http://compare.open-budget.org.il/p/'+(@model.get 'field')+'.html" send="false" layout="button_count" width="200" show_faces="false"></fb:like>'
+                fb_iframe = '<fb:like href="http://ayal.github.io/obudget_comparator/p/'+(@model.get 'field')+'.html" send="false" layout="button_count" width="200" show_faces="false"></fb:like>'
                 #fb_iframe = '<iframe src="http://www.facebook.com/plugins/like.php?locale=he_IL&href=http%3A%2F%2Fcompare.open-budget.org.il%2Fp%2F'+(@model.get 'field')+'.html&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=469139063167385" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>'
                 #$("div[data-id='#{@id}'] .btnShareContainer").append("<div class='fb-like' data-href='http://compare.open-budget.org.il/p/#{@model.get 'field'}.html' data-send='false' data-layout='button_count' data-width='200' data-show-faces='false'></div>")
                 #$("div[data-id='#{@id}'] .btnShareContainer").append(fb_iframe)
