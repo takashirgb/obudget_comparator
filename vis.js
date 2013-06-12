@@ -473,7 +473,7 @@
       likeurlparts = likeref.split('/');
       likeurlparts.splice(-1);
       lasturlpart = location.href.split('/').splice(-1)[0];
-      likeurlparts.push('abcdef.html');
+      likeurlparts.push('aaa.html');
       newlikeref = likeurlparts.join('/');
       console.log('new like url', newlikeref);
       $(document.getElementsByTagName('fb:like')).attr('href', newlikeref);
