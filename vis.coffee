@@ -303,11 +303,11 @@ class BubbleChart extends Backbone.View
                 likeurlparts.splice(-1)
                 lasturlpart = location.href.split('/').splice(-1)[0]
               # likeurlparts.push(lasturlpart + '.html');
-                likeurlparts.push('aaa.html') #REPLACE THIS WITH THE PREVIOUS LINE WHEN HTMLZ AND IMAGES
+                likeurlparts.push('bbb.html') #REPLACE THIS WITH THE PREVIOUS LINE WHEN HTMLZ AND IMAGES
                 newlikeref = likeurlparts.join('/')
                 console.log('new like url', newlikeref)
                 $(document.getElementsByTagName('fb:like')).attr('href', newlikeref)
-                FB.XFBML.parse()
+#                FB.XFBML.parse()
 
                 $("div[data-id='#{@id}'] .btnDownload").attr("href","/images/large/#{@model.get 'field'}.jpg")
 

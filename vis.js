@@ -473,11 +473,10 @@
       likeurlparts = likeref.split('/');
       likeurlparts.splice(-1);
       lasturlpart = location.href.split('/').splice(-1)[0];
-      likeurlparts.push('aaa.html');
+      likeurlparts.push('bbb.html');
       newlikeref = likeurlparts.join('/');
       console.log('new like url', newlikeref);
       $(document.getElementsByTagName('fb:like')).attr('href', newlikeref);
-      FB.XFBML.parse();
       $("div[data-id='" + this.id + "'] .btnDownload").attr("href", "/images/large/" + (this.model.get('field')) + ".jpg");
       setBreadcrumbs = function(dd) {
         var bc, linkCode;
