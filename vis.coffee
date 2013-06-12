@@ -1,3 +1,5 @@
+console.log 'TAKASHI!'
+
 L = (x...) -> console.log x...
 
 formatNumber = (n,decimals) ->

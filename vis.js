@@ -46,6 +46,8 @@
   };
   __iced_k = __iced_k_noop = function() {};
 
+  console.log('TAKASHI!');
+
   L = function() {
     var x;
     x = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
@@ -698,7 +700,7 @@
               return __iced_deferrals.ret = arguments[0];
             };
           })(),
-          lineno: 532
+          lineno: 534
         })), 100);
         __iced_deferrals._fulfill();
       })(function() {
