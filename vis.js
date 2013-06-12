@@ -668,7 +668,7 @@
       if (this.force !== null) {
         this.force.stop();
       }
-      fb_iframe = '<fb:like href="http://ayal.github.io/obudget_comparator/p/' + (this.model.get('field')) + '.html" send="false" layout="button_count" width="200" show_faces="false"></fb:like>';
+      fb_iframe = '<fb:like href="http://takashirgb.github.io/obudget_comparator/p/' + (this.model.get('field')) + '.html" send="false" layout="button_count" width="200" show_faces="false"></fb:like>';
       this.force = d3.layout.force().nodes(this.nodes).size([this.width, this.height]).gravity(-0.01).charge(this.defaultCharge).friction(0.9).on("tick", function(e) {
         var avgx, maxx, minx, num;
         maxx = 0;

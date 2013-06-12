@@ -503,7 +503,7 @@ class BubbleChart extends Backbone.View
 
                 if @force != null
                         @force.stop()
-                fb_iframe = '<fb:like href="http://ayal.github.io/obudget_comparator/p/'+(@model.get 'field')+'.html" send="false" layout="button_count" width="200" show_faces="false"></fb:like>'
+                fb_iframe = '<fb:like href="http://takashirgb.github.io/obudget_comparator/p/'+(@model.get 'field')+'.html" send="false" layout="button_count" width="200" show_faces="false"></fb:like>'
                 #fb_iframe = '<iframe src="http://www.facebook.com/plugins/like.php?locale=he_IL&href=http%3A%2F%2Fcompare.open-budget.org.il%2Fp%2F'+(@model.get 'field')+'.html&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=469139063167385" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>'
                 #$("div[data-id='#{@id}'] .btnShareContainer").append("<div class='fb-like' data-href='http://compare.open-budget.org.il/p/#{@model.get 'field'}.html' data-send='false' data-layout='button_count' data-width='200' data-show-faces='false'></div>")
                 #$("div[data-id='#{@id}'] .btnShareContainer").append(fb_iframe)
